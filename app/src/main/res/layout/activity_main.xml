@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity"
+    android:background="@drawable/background_worldcup"
+
+    >
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/middle_size"
+        android:text="year"
+        android:textSize="@dimen/font_size"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+<TextView
+    android:id="@+id/homeTeamName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/year"
+    app:layout_constraintStart_toStartOf="parent"
+    android:text="Team1"
+    android:textSize="@dimen/font_size"
+    android:textColor="@color/black"
+    android:layout_marginTop="@dimen/middle_size"
+    android:layout_marginStart="@dimen/middle_size"
+    tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/homeTeamGoals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textSize="@dimen/font_size"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/homeTeamName"
+        app:layout_constraintStart_toEndOf="@id/homeTeamName"
+        android:layout_marginStart="@dimen/middle_size"/>
+    <TextView
+        android:id="@+id/underScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vs"
+        android:textSize="@dimen/font_size"
+        android:textStyle="bold"
+        android:textColor="@color/Red"
+        app:layout_constraintTop_toTopOf="@id/homeTeamName"
+        app:layout_constraintStart_toEndOf="@id/homeTeamGoals"
+        android:layout_marginStart="@dimen/small_size"/>
+    <TextView
+        android:id="@+id/awayTeamGoals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 1 "
+        android:textSize="@dimen/font_size"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/homeTeamName"
+        app:layout_constraintStart_toEndOf="@id/underScore"
+        android:layout_marginStart="@dimen/small_size"/>
+    <TextView
+        android:id="@+id/awayTeamName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team2"
+        android:textSize="@dimen/font_size"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/homeTeamName"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/middle_size"
+        />
+    <TextView
+        android:id="@+id/staduim1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="staduim1"
+        android:textSize="@dimen/font_size"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/homeTeamName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/middle_size"/>
+    <ImageView
+        android:id="@+id/pervious"
+        android:layout_width="@dimen/middle_size"
+        android:layout_height="@dimen/middle_size"
+        android:layout_marginTop="@dimen/middle_size"
+        android:src="@drawable/ic_baseline_navigate_before_24"
+        app:layout_constraintTop_toBottomOf="@id/staduim1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/middle_size"/>
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="@dimen/middle_size"
+        android:layout_height="@dimen/middle_size"
+        android:layout_marginTop="@dimen/middle_size"
+
+        android:src="@drawable/ic_baseline_navigate_next_24"
+        app:layout_constraintTop_toBottomOf="@id/staduim1"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/middle_size"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
